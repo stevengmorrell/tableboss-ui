@@ -21,7 +21,7 @@ const Overlay = () => {
   return (
     <div>
       <h1>Overlay</h1>
-      <h2>Player 1: {playerOneName}</h2>
+      <h2 style={{"color":"red"}}>Player 1: {playerOneName}</h2>
       <h2>Player 2: {playerTwoName}</h2>
     </div>
   );
