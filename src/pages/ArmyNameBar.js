@@ -1,11 +1,11 @@
 import React from "react";
-import { Card } from "@mui/material/Card";
+
 import { Grid } from "@mui/material";
 import Paper from '@mui/material/Paper'
 import TextField from "@mui/material/TextField"
 
 
-const ArmyName = () => {
+const ArmyNameBar = () => {
   return (
       <Grid container>
     <TextField variant="outlined" disabled value="WARHAMMER"
@@ -21,8 +21,7 @@ const ArmyName = () => {
     <Paper square={true}
     sx={{
         border: 10,
-               borderTopRightRadius: 10
-        
+        borderTopRightRadius: 10     
         }}>
         <p>HELLo</p>
     </Paper>
@@ -30,8 +29,8 @@ const ArmyName = () => {
         border: 0.5, 
         borderradius: 50,
         borderTopRightRadius: 20,
-        background: "silver",       
-        
+        background: "silver",    
+        maxHeight: 50,
         pl: 2, 
         pr: 10, 
         m: 2,
@@ -44,4 +43,4 @@ const ArmyName = () => {
   );
 };
 
-export default ArmyName;
+export default ArmyNameBar;

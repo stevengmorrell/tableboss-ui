@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, Grid, Box } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-import ArmyName from "./pages/ArmyName";
+import ArmyNameBar from "./pages/ArmyNameBar";
 
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <Box>
     <Grid container>
-      <ArmyName/>
+      <ArmyNameBar/>
     </Grid>
     
     <Grid>
