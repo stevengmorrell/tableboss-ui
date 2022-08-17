@@ -33,7 +33,7 @@ const Overlay = () => {
       }}
     >
       <Container>
-        <NamePlate name={playerOneName} army={"Adeptus Mechanics"} />
+        <NamePlate name={playerOneName} army={"Adeptus Mechanicus"} />
         <NamePlate name={playerTwoName} army={"Salamanders"} />
       </Container>
     </Box>
