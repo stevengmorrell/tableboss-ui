@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { ref, onValue } from "firebase/database";
 import { database } from "../base";
+import { Box } from "@mui/system";
+
+import NamePlate from "../components/NamePlate/NamePlate";
+import { Container } from '@mui/material';
 
 const Overlay = () => {
   const [playerOneName, setPlayerOneName] = useState(null);
   const [playerTwoName, setPlayerTwoName] = useState(null);
+
+  //listen once for each player, retrieve all player data
 
   useEffect(() => {
     const playerOneNameRef = ref(database, "/users/1/name");
@@ -19,11 +25,18 @@ const Overlay = () => {
   });
 
   return (
-    <div>
-      <h1>Overlay</h1>
-      <h2>Player 1: {playerOneName}</h2>
-      <h2>Player 2: {playerTwoName}</h2>
-    </div>
+    <Box
+      sx={{
+        background: "#2B2B2D",
+        width: "25%",
+        height: "100vh",
+      }}
+    >
+      <Container>
+        <NamePlate name={playerOneName} army={"Adeptus Mechanics"} />
+        <NamePlate name={playerTwoName} army={"Salamanders"} />
+      </Container>
+    </Box>
   );
 };
 
