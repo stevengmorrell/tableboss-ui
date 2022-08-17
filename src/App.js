@@ -1,8 +1,6 @@
 import { Button, ButtonGroup } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-import React from 'react';
-
-
+import React from "react";
 
 function App() {
   return (
@@ -21,7 +19,6 @@ function App() {
           Manage Games
         </Button>
       </ButtonGroup>
-
     </React.Fragment>
   );
 }
