@@ -1,27 +1,28 @@
 import React from "react";
 import { Box } from "@mui/system";
-import { Grid } from "@mui/material";
 import PropTypes from "prop-types";
+import { blueGrey } from "@mui/material/colors";
 
 const NamePlate = ({ name, army }) => {
   return (
     <Box>
-      <Box component="span" sx={{ color: "#FFFFFF" }}>{name}</Box>
-      <Box display="flex" justifyContent="center" alignItems="center"
+      <Box component="span" sx={{ color: "#FFFFFF" }}>
+        {name}
+      </Box>
+      <Box
+        display="flex"
+        justifyContent="left"
+        alignItems="center"
+        paddingLeft={2}
         sx={{
-           textTransform: "none",
-           backgroundColor: "#8d99ae",
-           borderRadius: "0px",
-           clipPath: "polygon(98% 0, 100% 40%, 100% 100%, 0 100%, 0 0)",
-           //"polygon(80% 0, 100% 15%, 100% 100%, 0 100%, 0 0)",
-           //"polygon(100% 0, 100% 65%, 90% 100%, 0 100%, 0 35%, 10% 0)",
-           color: "#000000",
-           fontSize: "2",      
-           alignText: "center"
-                     
-        }}         
-       >
-       {army}</Box>
+          background: `linear-gradient( ${blueGrey[50]}, ${blueGrey[400]})`,
+          clipPath: "polygon(98% 0, 100% 40%, 100% 100%, 0 100%, 0 0)",
+          color: "#000000",
+          fontSize: 24,
+        }}
+      >
+        {army}
+      </Box>
     </Box>
   );
 };
