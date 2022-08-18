@@ -15,7 +15,7 @@ const NamePlate = ({ name, army }) => {
   return (
     <Box sx={{pt: '10px'}}>
       <Box component='span' sx={{ color: "#FFFFFF" }}>
-        {name.toUpperCase()}
+        {name?.toUpperCase()}
       </Box>
       <Box sx={{ position: "relative" }}>
         <Background />
@@ -33,7 +33,7 @@ const NamePlate = ({ name, army }) => {
           }}
           component='span'
         >
-          {army.toUpperCase()}
+          {army?.toUpperCase()}
         </Box>
       </Box>
     </Box>
