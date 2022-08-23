@@ -1,10 +1,10 @@
-import { Button, ButtonGroup } from "@mui/material";
+import { Button, ButtonGroup, Container } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import React from "react";
 
 function App() {
   return (
-    <React.Fragment>
+    <Container>
       <ButtonGroup
         variant='contained'
         aria-label='outlined primary button group'
@@ -19,7 +19,7 @@ function App() {
           Manage Games
         </Button>
       </ButtonGroup>
-    </React.Fragment>
+    </Container>
   );
 }
 

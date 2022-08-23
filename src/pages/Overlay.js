@@ -2,27 +2,22 @@ import React, { useEffect, useState } from "react";
 import { ref, onValue } from "firebase/database";
 import { database } from "../base";
 import { Box } from "@mui/system";
-
 import NamePlate from "../components/NamePlate/NamePlate";
-import { Container } from '@mui/material';
+import { Container } from "@mui/material";
 
 const Overlay = () => {
-  const [playerOneName, setPlayerOneName] = useState(null);
-  const [playerTwoName, setPlayerTwoName] = useState(null);
-
-  //listen once for each player, retrieve all player data
+  const playerNameRef = ref(database, "/users");
+  const [playerData, setPlayerData] = useState({1:{},2:{}});
+  // const [playerTwo, setPlayerTwo] = useState(null);
+  
 
   useEffect(() => {
-    const playerOneNameRef = ref(database, "/users/1/name");
-    onValue(playerOneNameRef, (snapshot) => {
-      setPlayerOneName(snapshot.val());
+    
+    onValue(playerNameRef, (snapshot) => {
+      setPlayerData(snapshot.val());
     });
+  }, [playerNameRef]);
 
-    const playerTwoNameRef = ref(database, "/users/2/name");
-    onValue(playerTwoNameRef, (snapshot) => {
-      setPlayerTwoName(snapshot.val());
-    });
-  });
 
   return (
     <Box
@@ -33,8 +28,8 @@ const Overlay = () => {
       }}
     >
       <Container>
-        <NamePlate name={playerOneName} army={"Adeptus Mechanicus"} />
-        <NamePlate name={playerTwoName} army={"Salamanders"} />
+        <NamePlate name={playerData["1"]?.name} army={playerData["1"]?.army} />
+        <NamePlate name={playerData["2"]?.name} army={playerData["2"]?.army} />
       </Container>
     </Box>
   );
