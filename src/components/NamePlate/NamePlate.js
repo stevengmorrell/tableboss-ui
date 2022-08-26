@@ -14,6 +14,7 @@ const Background = () => (
 const NamePlate = ({ name, army }) => {
   return (
     <Box sx={{pt: '10px'}}>
+    
       <Box component='span' sx={{ color: "#FFFFFF" }}>
         {name?.toUpperCase()}
       </Box>

@@ -4,6 +4,8 @@ import { database } from "../base";
 import { Box } from "@mui/system";
 import NamePlate from "../components/NamePlate/NamePlate";
 import { Container } from "@mui/material";
+import CommandPoints from "../components/CommandPoints/CommandPoints";
+import SecondaryProgress from './../components/SecondaryProgress/SecondaryProgress';
 
 const Overlay = () => {
   const playerNameRef = ref(database, "/users");
@@ -30,6 +32,9 @@ const Overlay = () => {
       <Container>
         <NamePlate name={playerData["1"]?.name} army={playerData["1"]?.army} />
         <NamePlate name={playerData["2"]?.name} army={playerData["2"]?.army} />
+        <CommandPoints />
+        <SecondaryProgress/>
+        
       </Container>
     </Box>
   );
