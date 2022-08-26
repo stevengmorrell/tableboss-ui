@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 import NamePlate from "../components/NamePlate/NamePlate";
 import { Container } from "@mui/material";
 import CommandPoints from "../components/CommandPoints/CommandPoints";
-import SecondaryProgress from './../components/SecondaryProgress/SecondaryProgress';
+import SecondaryProgress from '../components/SecondaryProgress/SecondaryProgress';
 
 const Overlay = () => {
   const playerNameRef = ref(database, "/users");
