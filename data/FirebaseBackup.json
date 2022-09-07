@@ -1,0 +1,38 @@
+{
+  "games": {
+    "2ac27332-2eb9-11ed-a261-0242ac120002": "",
+    "4b305bd0-2eb8-11ed-a261-0242ac120002": {
+      "currentRound": 1,
+      "missionName": "Recover the Relics",
+      "p1Sec1": {
+        "name": "xxx",
+        "value": 4
+      },
+      "p1Sec3": {
+        "name": "zzz",
+        "value": 5
+      },
+      "p1sec2": {
+        "name": "yyy",
+        "value": 3
+      },
+      "playerOneCP": 3,
+      "playerOneFaction": "Adeptus Mechanicus",
+      "playerOneName": "Steve",
+      "playerOneScore": 15,
+      "playerTwoCP": 4,
+      "playerTwoFaction": "Salamanders",
+      "playerTwoName": "Tom",
+      "playerTwoScore": 10
+    }
+  },
+  "users": [
+    null,
+    {
+      "name": "Paul"
+    },
+    {
+      "name": "Steve"
+    }
+  ]
+}
