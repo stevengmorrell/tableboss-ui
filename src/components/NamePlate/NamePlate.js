@@ -21,9 +21,6 @@ const NamePlate = ({ name, army }) => {
         <Background />
         <Box
           sx={{
-            "font-family": "Inter",
-            "font-style": "normal",
-            "font-weight": "400",
             "font-size": "28px",
             "line-height": "34px",
             color: "#2B2B2D",
