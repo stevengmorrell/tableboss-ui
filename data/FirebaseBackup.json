@@ -1,4 +1,92 @@
 {
+  "factions": [
+    { "name": "Generic", "secondaries": [1] },
+    { "name": "Adepta Sororitas", "secondaries": [1] },
+    { "name": "Adeptus Custodes", "secondaries": [1] },
+    { "name": "Adeptus Mechanicus", "secondaries": [1] },
+    { "name": "Astra Militarum", "secondaries": [1] },
+    { "name": "Imperial Knights", "secondaries": [1] },
+    { "name": "Grey Knights", "secondaries": [1] },
+    { "name": "Space Marines", "secondaries": [1] },
+    { "name": "Deathwatch", "secondaries": [1] },
+    { "name": "Dark Angels", "secondaries": [1] },
+    { "name": "Blood Angels", "secondaries": [1] },
+    { "name": "Black Templars", "secondaries": [1] },
+    { "name": "Imperial Fists", "secondaries": [1] },
+    { "name": "Iron Hands", "secondaries": [1] },
+    { "name": "Raven Guard", "secondaries": [1] },
+    { "name": "Salamanders", "secondaries": [1] },
+    { "name": "Space Wolves", "secondaries": [1] },
+    { "name": "Ultramarines", "secondaries": [1] },
+    { "name": "White Scars", "secondaries": [1] },
+    { "name": "Chaos Space Marines", "secondaries": [1] },
+    { "name": "Alpha Legion", "secondaries": [1] },
+    { "name": "Black Legion", "secondaries": [1] },
+    { "name": "Creations of Bile", "secondaries": [1] },
+    { "name": "Emperor's Children", "secondaries": [1] },
+    { "name": "Iron Warriors", "secondaries": [1] },
+    { "name": "Night Lords", "secondaries": [1] },
+    { "name": "Red Corsairs", "secondaries": [1] },
+    { "name": "Word Bearers", "secondaries": [1] },
+    { "name": "World Eaters", "secondaries": [1] },
+    { "name": "Chaos Daemons", "secondaries": [1] },
+    { "name": "Chaos Knights", "secondaries": [1] },
+    { "name": "Thousand Sons", "secondaries": [1] },
+    { "name": "Death Guard", "secondaries": [1] },
+    { "name": "Asuryani", "secondaries": [1] },
+    { "name": "Drukhari", "secondaries": [1] },
+    { "name": "Genestealer Cults", "secondaries": [1] },
+    { "name": "Harlequins", "secondaries": [1] },
+    { "name": "Necrons", "secondaries": [1] },
+    { "name": "Orks", "secondaries": [1] },
+    { "name": "T'au Empire", "secondaries": [1] },
+    { "name": "Tyranids", "secondaries": [1] }
+  ],
+  "missionPacks": [
+    {
+      "name": "Warhammer 40,000 9th Edition Warzone Nephillim - Strike Force",
+      "missions": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }
+  ],
+  "missions": [
+    { "name": "Recover the Relics","key":1, "primaryObjectives":[1,10,11,13]},
+    { "name": "Tear Down Their Icons","key":2, "primaryObjectives":[10,11,13,18]},
+    { "name": "Data Scry-salvage","key":3, "primaryObjectives":[11,12,13,19]},
+    { "name": "Abandoned Sanctuaries","key":4, "primaryObjectives":[2,10,11,13,14,20]},
+    { "name": "Conversion","key":5, "primaryObjectives":[3,4,5,11,13,15,16,17]},
+    { "name": "The Scouring","key":6, "primaryObjectives":[10,11,13,21]},
+    { "name": "Tide of Conviction","key":7, "primaryObjectives":[6,11,12,13,22,23]},
+    { "name": "Death and Zeal","key":8, "primaryObjectives":[7,8,10,11,13]},
+    { "name": "Secure Missing Artefacts","key":9, "primaryObjectives":[9,10,11,13]}
+  ],
+
+  "primaryObjectives": [
+    {"name":"Enemy Units Destroyed","key":1, "type":"number"},
+    {"name":"Control centre objective or destroy enemy unit within 6\" of centre","key":2},
+    {"name":"Control objective in opponent's deployment zone","key":3},
+    {"name":"Control objective in no man's land","key":4},
+    {"name":"Not Controlling own objective","key":5},
+    {"name":"Number of Controlled objectives in opponent's territory","key":6, "type":"number"},
+    {"name":"control every objective or control one new marker","key":7},
+    {"name":"Kill 1+ unit in range of an objective","key":8},
+    {"name":"Control own priority objective","key":9},
+    {"name":"Control 1+","key":10},
+    {"name":"Control 2+","key":11},
+    {"name":"Control 3+","key":12},
+    {"name":"Control More","key":13},
+    {"name":"Control centre objective or destroy enemy unit within 6\" of centre","key":14},
+    {"name":"Control objective in opponent's deployment zone","key":15},
+    {"name":"Control objective in no man's land","key":16},
+    {"name":"Control own objective","key":17},
+    {"name":"Primed Explosives","key":18, "type":"number"},
+    {"name":"Data Intercepted","key":19},
+    {"name":"Control Centre Objective","key":20},
+    {"name":"Number of Objectives scanned","key":21, "type":"number"},
+    {"name":"Control opponent's objective","key":22},
+    {"name":"Control objective in opponent's territory","key":23, "type":"number"}
+  ]
+},
+
   "games": {
     "2ac27332-2eb9-11ed-a261-0242ac120002": "",
     "4b305bd0-2eb8-11ed-a261-0242ac120002": {
@@ -27,7 +115,6 @@
     }
   },
   "users": [
-    null,
     {
       "name": "Paul"
     },
