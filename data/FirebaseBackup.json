@@ -1,46 +1,359 @@
 {
   "factions": [
-    { "name": "Generic", "secondaries": [1] },
-    { "name": "Adepta Sororitas", "secondaries": [1] },
-    { "name": "Adeptus Custodes", "secondaries": [1] },
-    { "name": "Adeptus Mechanicus", "secondaries": [1] },
-    { "name": "Astra Militarum", "secondaries": [1] },
-    { "name": "Imperial Knights", "secondaries": [1] },
-    { "name": "Grey Knights", "secondaries": [1] },
-    { "name": "Space Marines", "secondaries": [1] },
-    { "name": "Deathwatch", "secondaries": [1] },
-    { "name": "Dark Angels", "secondaries": [1] },
-    { "name": "Blood Angels", "secondaries": [1] },
-    { "name": "Black Templars", "secondaries": [1] },
-    { "name": "Imperial Fists", "secondaries": [1] },
-    { "name": "Iron Hands", "secondaries": [1] },
-    { "name": "Raven Guard", "secondaries": [1] },
-    { "name": "Salamanders", "secondaries": [1] },
-    { "name": "Space Wolves", "secondaries": [1] },
-    { "name": "Ultramarines", "secondaries": [1] },
-    { "name": "White Scars", "secondaries": [1] },
-    { "name": "Chaos Space Marines", "secondaries": [1] },
-    { "name": "Alpha Legion", "secondaries": [1] },
-    { "name": "Black Legion", "secondaries": [1] },
-    { "name": "Creations of Bile", "secondaries": [1] },
-    { "name": "Emperor's Children", "secondaries": [1] },
-    { "name": "Iron Warriors", "secondaries": [1] },
-    { "name": "Night Lords", "secondaries": [1] },
-    { "name": "Red Corsairs", "secondaries": [1] },
-    { "name": "Word Bearers", "secondaries": [1] },
-    { "name": "World Eaters", "secondaries": [1] },
-    { "name": "Chaos Daemons", "secondaries": [1] },
-    { "name": "Chaos Knights", "secondaries": [1] },
-    { "name": "Thousand Sons", "secondaries": [1] },
-    { "name": "Death Guard", "secondaries": [1] },
-    { "name": "Asuryani", "secondaries": [1] },
-    { "name": "Drukhari", "secondaries": [1] },
-    { "name": "Genestealer Cults", "secondaries": [1] },
-    { "name": "Harlequins", "secondaries": [1] },
-    { "name": "Necrons", "secondaries": [1] },
-    { "name": "Orks", "secondaries": [1] },
-    { "name": "T'au Empire", "secondaries": [1] },
-    { "name": "Tyranids", "secondaries": [1] }
+    {
+      "name": "Generic",
+      "secondaries": [
+        "BRING IT DOWN",
+        "GRIND THEM DOWN",
+        "NO PRISONERS",
+        "ABHOR THE WITCH",
+        "WARP RITUAL",
+        "PSYCHIC INTERROGATION",
+        "BEHIND ENEMY LINES",
+        "ENGAGE ON ALL FRONTS",
+        "RAISE THE BANNERS HIGH",
+        "RETRIEVE NEPHILIM DATA"
+      ]
+    },
+    {
+      "name": "Adepta Sororitas",
+      "secondaries": [
+        "SLAY THE HERETIC",
+        "A LEAP OF FAITH",
+        "DEFEND THE SHRINE",
+        "SACRED GROUNDS"
+      ]
+    },
+    {
+      "name": "Adeptus Custodes",
+      "secondaries": ["AURIC MORTALIS", "MIGHT OF TERRA", "STAND VIGIL"]
+    },
+    {
+      "name": "Adeptus Mechanicus",
+      "secondaries": [
+        "ACCRETION OF KNOWLEDGE",
+        "ERADICATION OF FLESH",
+        "HIDDEN ARCHEOVAULT",
+        "UNCHARTED SEQUENCING"
+      ]
+    },
+    {
+      "name": "Astra Militarum",
+      "secondaries": [
+        "BY LASGUN AND BAYONET",
+        "INFLEXIBLE COMMAND",
+        "BOOTS ON THE GROUND",
+        "SPECIAL ORDERS"
+      ]
+    },
+    {
+      "name": "Imperial Knights",
+      "secondaries": [
+        "DUEL OF HONOUR",
+        "HONOUR OF THE HOUSE",
+        "YIELD NO GROUND",
+        "RENEW THE OATHS"
+      ]
+    },
+    {
+      "name": "Grey Knights",
+      "secondaries": [
+        "DESTROY THE DAEMON",
+        "TELEPORT ASSAULT",
+        "PURIFYING RITUAL"
+      ]
+    },
+    {
+      "name": "Space Marines",
+      "secondaries": ["CODEX WARFARE", "OATHS OF MOMENT", "SHOCK TACTICS"]
+    },
+    {
+      "name": "Deathwatch",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "CULL ORDER",
+        "SUFFER NOT THE ALIEN",
+        "THE LONG VIGIL",
+        "CRIPPLE STRONGHOLD"
+      ]
+    },
+    {
+      "name": "Dark Angels",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "MARTIAL INTERDICTION",
+        "DEATH ON THE WIND",
+        "STUBBORN DEFIANCE"
+      ]
+    },
+    {
+      "name": "Blood Angels",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "BLADE OF SANGUINIUS",
+        "FURY OF THE LOST",
+        "DEATH FROM ABOVE",
+        "RELENTLESS ASSAULT"
+      ]
+    },
+    {
+      "name": "Black Templars",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "BATHE YOUR BLADE IN THE BLOOD OF THE FOE",
+        "CARRY OUT YOUR VOWS",
+        "ALLOW NOT THE WORSHIP OF UNCLEAN IDOLS"
+      ]
+    },
+    {
+      "name": "Imperial Fists",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "BOLSTER BARRICADES"
+      ]
+    },
+    {
+      "name": "Iron Hands",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "COLD FURY"
+      ]
+    },
+    {
+      "name": "Raven Guard",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "SECURE OR SABOTAGE"
+      ]
+    },
+    {
+      "name": "Salamanders",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "THE PROMETHEAN CREED"
+      ]
+    },
+    {
+      "name": "Space Wolves",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "HEROIC CHALLENGE",
+        "GLORY KILLS",
+        "A MIGHTY SAGA",
+        "WARRIOR PRIDE"
+      ]
+    },
+    {
+      "name": "Ultramarines",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "WE MARCH FOR MACRAGGE"
+      ]
+    },
+    {
+      "name": "White Scars",
+      "secondaries": [
+        "CODEX WARFARE",
+        "OATHS OF MOMENT",
+        "SHOCK TACTICS",
+        "LIGHTNING STRIKE"
+      ]
+    },
+    {
+      "name": "Chaos Space Marines",
+      "secondaries": ["RISE TO GLORY", "THE LONG WAR", "FOR THE DARK GODS"]
+    },
+    {
+      "name": "Alpha Legion",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "INFILTRATE AND SUBVERT"
+      ]
+    },
+    {
+      "name": "Black Legion",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "DESPOIL DOMINIONS"
+      ]
+    },
+    {
+      "name": "Creations of Bile",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "SPECIMENS FOR THE SPIDER"
+      ]
+    },
+    {
+      "name": "Emperor's Children",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "ADORN THE CANVAS ECLECTIC"
+      ]
+    },
+    {
+      "name": "Iron Warriors",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "MASTERS OF DEMOLITION"
+      ]
+    },
+    {
+      "name": "Night Lords",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "SOW THE SEED REAP THE FEAR"
+      ]
+    },
+    {
+      "name": "Red Corsairs",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "RAID AND REAVE"
+      ]
+    },
+    {
+      "name": "Word Bearers",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "EXALT THE DARK GODS"
+      ]
+    },
+    {
+      "name": "World Eaters",
+      "secondaries": [
+        "RISE TO GLORY",
+        "THE LONG WAR",
+        "FOR THE DARK GODS",
+        "SKULLS FOR THE SKULL THRONE"
+      ]
+    },
+    {
+      "name": "Chaos Daemons",
+      "secondaries": [
+        "NOURISHED BY TERROR",
+        "REALITY REBELS",
+        "DESPOILERS OF REALITY"
+      ]
+    },
+    {
+      "name": "Chaos Knights",
+      "secondaries": [
+        "A FITTING CHALLENGE",
+        "PATH OF DESTRUCTION",
+        "RUTHLESS TYRANNY",
+        "STORM OF DARKNESS"
+      ]
+    },
+    {
+      "name": "Thousand Sons",
+      "secondaries": [
+        "SORCEROUS POWER",
+        "WRATH OF MAGNUS",
+        "MUTATE LANDSCAPE",
+        "BURN EMPIRES"
+      ]
+    },
+    {
+      "name": "Death Guard",
+      "secondaries": [
+        "FLEEING VECTORS",
+        "DESPOILED GROUND",
+        "SPREAD THE SICKNESS"
+      ]
+    },
+    {
+      "name": "Asuryani",
+      "secondaries": [
+        "WRATH OF KHAINE",
+        "SCRY FUTURES",
+        "THE HIDDEN PATH",
+        "SCOUT THE ENEMY"
+      ]
+    },
+    {
+      "name": "Drukhari",
+      "secondaries": [
+        "TAKE THEM ALIVE",
+        "BEASTS FOR THE ARENAS",
+        "FEAR AND TERROR",
+        "HERD THE PREY"
+      ]
+    },
+    {
+      "name": "Genestealer Cults",
+      "secondaries": ["AMBUSH", "BROODSWARM", "SABOTAGE CRITICAL LOCATION"]
+    },
+    {
+      "name": "Harlequins",
+      "secondaries": ["A DEADLY PERFORMANCE", "WEAVE VEIL", "TAKE YOUR PLACES"]
+    },
+    {
+      "name": "Necrons",
+      "secondaries": [
+        "CODE OF COMBAT",
+        "THE TREASURES OF AEONS",
+        "PURGE THE VERMIN",
+        "ANCIENT MACHINERIES"
+      ]
+    },
+    {
+      "name": "Orks",
+      "secondaries": [
+        "DA BIGGEST AND DA BEST",
+        "STOMP’EM GOOD",
+        "GREEN TIDE",
+        "GET DA GOOD BITZ"
+      ]
+    },
+    {
+      "name": "T'au Empire",
+      "secondaries": [
+        "A CLEAN VICTORY",
+        "DECISIVE ACTION",
+        "AEROSPACE TARGETING RELAYS"
+      ]
+    },
+    {
+      "name": "Tyranids",
+      "secondaries": ["CRANIAL FEASTING", "SYNAPTIC INSIGHT", "SPORE NODES"]
+    }
   ],
   "missionPacks": [
     {
@@ -49,44 +362,183 @@
     }
   ],
   "missions": [
-    { "name": "Recover the Relics","key":1, "primaryObjectives":[1,10,11,13]},
-    { "name": "Tear Down Their Icons","key":2, "primaryObjectives":[10,11,13,18]},
-    { "name": "Data Scry-salvage","key":3, "primaryObjectives":[11,12,13,19]},
-    { "name": "Abandoned Sanctuaries","key":4, "primaryObjectives":[2,10,11,13,14,20]},
-    { "name": "Conversion","key":5, "primaryObjectives":[3,4,5,11,13,15,16,17]},
-    { "name": "The Scouring","key":6, "primaryObjectives":[10,11,13,21]},
-    { "name": "Tide of Conviction","key":7, "primaryObjectives":[6,11,12,13,22,23]},
-    { "name": "Death and Zeal","key":8, "primaryObjectives":[7,8,10,11,13]},
-    { "name": "Secure Missing Artefacts","key":9, "primaryObjectives":[9,10,11,13]}
+    {
+      "name": "Recover the Relics",
+      "key": 1,
+      "primaryObjectives": [1, 10, 11, 13]
+    },
+    {
+      "name": "Tear Down Their Icons",
+      "key": 2,
+      "primaryObjectives": [10, 11, 13, 18]
+    },
+    {
+      "name": "Data Scry-salvage",
+      "key": 3,
+      "primaryObjectives": [11, 12, 13, 19]
+    },
+    {
+      "name": "Abandoned Sanctuaries",
+      "key": 4,
+      "primaryObjectives": [2, 10, 11, 13, 14, 20]
+    },
+    {
+      "name": "Conversion",
+      "key": 5,
+      "primaryObjectives": [3, 4, 5, 11, 13, 15, 16, 17]
+    },
+    { "name": "The Scouring", "key": 6, "primaryObjectives": [10, 11, 13, 21] },
+    {
+      "name": "Tide of Conviction",
+      "key": 7,
+      "primaryObjectives": [6, 11, 12, 13, 22, 23]
+    },
+    {
+      "name": "Death and Zeal",
+      "key": 8,
+      "primaryObjectives": [7, 8, 10, 11, 13]
+    },
+    {
+      "name": "Secure Missing Artefacts",
+      "key": 9,
+      "primaryObjectives": [9, 10, 11, 13]
+    }
   ],
 
   "primaryObjectives": [
-    {"name":"Enemy Units Destroyed","key":1, "type":"number"},
-    {"name":"Control centre objective or destroy enemy unit within 6\" of centre","key":2},
-    {"name":"Control objective in opponent's deployment zone","key":3},
-    {"name":"Control objective in no man's land","key":4},
-    {"name":"Not Controlling own objective","key":5},
-    {"name":"Number of Controlled objectives in opponent's territory","key":6, "type":"number"},
-    {"name":"control every objective or control one new marker","key":7},
-    {"name":"Kill 1+ unit in range of an objective","key":8},
-    {"name":"Control own priority objective","key":9},
-    {"name":"Control 1+","key":10},
-    {"name":"Control 2+","key":11},
-    {"name":"Control 3+","key":12},
-    {"name":"Control More","key":13},
-    {"name":"Control centre objective or destroy enemy unit within 6\" of centre","key":14},
-    {"name":"Control objective in opponent's deployment zone","key":15},
-    {"name":"Control objective in no man's land","key":16},
-    {"name":"Control own objective","key":17},
-    {"name":"Primed Explosives","key":18, "type":"number"},
-    {"name":"Data Intercepted","key":19},
-    {"name":"Control Centre Objective","key":20},
-    {"name":"Number of Objectives scanned","key":21, "type":"number"},
-    {"name":"Control opponent's objective","key":22},
-    {"name":"Control objective in opponent's territory","key":23, "type":"number"}
-  ]
-},
-
+    {
+      "name": "Enemy Units Destroyed",
+      "key": 1,
+      "type": "number",
+      "points": 1,
+      "rounds": [1, 2, 3, 4, 5],
+      "maxPoints": 3
+    },
+    {
+      "name": "Control centre objective or destroy enemy unit within 6\" of centre",
+      "key": 2,
+      "points": 2,
+      "rounds": [1, 2, 3, 4, 5]
+    },
+    {
+      "name": "Control objective in opponent's deployment zone",
+      "key": 3,
+      "points": 4,
+      "rounds": [1, 2, 3, 4, 5]
+    },
+    {
+      "name": "Control objective in no man's land",
+      "key": 4,
+      "points": 2,
+      "rounds": [1, 2, 3, 4, 5]
+    },
+    {
+      "name": "Not Controlling own objective",
+      "key": 5,
+      "points": -1,
+      "rounds": [1, 2, 3, 4, 5]
+    },
+    {
+      "name": "Number of Controlled objectives in opponent's territory",
+      "key": 6,
+      "type": "number",
+      "points": 2,
+      "rounds": [1, 2, 3, 4]
+    },
+    {
+      "name": "control every objective or control one new marker",
+      "key": 7,
+      "points": 2,
+      "rounds": [1, 2, 3, 4, 5],
+      "notes": "this objectives score 3 points combined if both are met, will need an extra data field/function to process"
+    },
+    {
+      "name": "Kill 1+ unit in range of an objective",
+      "key": 8,
+      "points": 2,
+      "rounds": [1, 2, 3, 4, 5],
+      "notes": "this objectives score 3 points combined if both are met, will need an extra data field/function to process"
+    },
+    {
+      "name": "Control own priority objective",
+      "key": 9,
+      "points": 3,
+      "rounds": [1, 2, 3, 4, 5]
+    },
+    { "name": "Control 1+", "key": 10, "points": 4, "rounds": [2, 3, 4, 5] },
+    { "name": "Control 2+", "key": 11, "points": 4, "rounds": [2, 3, 4, 5] },
+    { "name": "Control 3+", "key": 12, "points": 4, "rounds": [2, 3, 4, 5] },
+    {
+      "name": "Control More",
+      "key": 13,
+      "points": 4,
+      "rounds": [2, 3, 4, 5]
+    },
+    {
+      "name": "Control centre objective or destroy enemy unit within 6\" of centre",
+      "key": 14,
+      "points": 2,
+      "rounds": [2, 3, 4, 5]
+    },
+    {
+      "name": "Control objective in opponent's deployment zone",
+      "key": 15,
+      "points": 4,
+      "rounds": [2, 3, 4, 5]
+    },
+    {
+      "name": "Control objective in no man's land",
+      "key": 16,
+      "points": 2,
+      "rounds": [2, 3, 4, 5]
+    },
+    {
+      "name": "Control own objective",
+      "key": 17,
+      "points": -1,
+      "rounds": [2, 3, 4, 5]
+    },
+    {
+      "name": "Primed Explosives",
+      "key": 18,
+      "type": "number",
+      "points": 4,
+      "rounds": [6],
+      "maxPoints": 15
+    },
+    {
+      "name": "Data Intercepted",
+      "key": 19,
+      "points": 3,
+      "rounds": [6]
+    },
+    {
+      "name": "Control Centre Objective",
+      "key": 20,
+      "points": 5,
+      "rounds": [6]
+    },
+    {
+      "name": "Number of Objectives scanned",
+      "key": 21,
+      "type": "number",
+      "points": 3,
+      "rounds": [6]
+    },
+    {
+      "name": "Control opponent's objective",
+      "key": 22,
+      "points": 4,
+      "rounds": [6]
+    },
+    {
+      "name": "Control objective in opponent's territory",
+      "key": 23,
+      "type": "number",
+      "points": 2,
+      "rounds": [6]
+    }
+  ],
   "games": {
     "2ac27332-2eb9-11ed-a261-0242ac120002": "",
     "4b305bd0-2eb8-11ed-a261-0242ac120002": {
