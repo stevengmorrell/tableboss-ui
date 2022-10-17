@@ -10,16 +10,20 @@ import RoundPlate from "../components/RoundPlate/RoundPlate";
 import OverlayImageBottom from "../components/OverlayImageBottom/OverlayImageBottom";
 
 const gameRef = ref(database, "/games/4b305bd0-2eb8-11ed-a261-0242ac120002");
+const factionsRef = ref(database, "/factions");
 
 const Overlay = () => {
   const [gameData, setGameData] = useState({});
+  const [factions, setFactions] = useState({});
 
   useEffect(() => {
     onValue(gameRef, (snapshot) => {
       setGameData(snapshot.val());
     });
+    onValue(factionsRef, (snapshot) => {
+      setFactions(snapshot.val());
+    });
   }, []);
-
   return (
     <Box
       sx={{
@@ -33,12 +37,12 @@ const Overlay = () => {
     >
       <Container>
         <NamePlate
-          name={gameData?.playerOneName}
-          army={gameData?.playerOneFaction}
+          name={gameData?.p1Name}
+          army={factions[gameData.p1Faction]?.name}
         />
         <ScorePlate
           score={gameData?.playerOneScore}
-          commandPoints={gameData?.playerOneCP}
+          commandPoints={gameData.playerOneCP}
         />
         <Secondaries
           p1Sec1={gameData?.p1Sec1}
@@ -46,8 +50,8 @@ const Overlay = () => {
           p1Sec3={gameData?.p1Sec3}
         />
         <NamePlate
-          name={gameData?.playerTwoName}
-          army={gameData?.playerTwoFaction}
+          name={gameData?.p2Name}
+          army={factions[gameData?.p2Faction]?.name}
         />
         <ScorePlate
           score={gameData?.playerTwoScore}
