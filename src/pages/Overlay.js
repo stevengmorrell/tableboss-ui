@@ -9,16 +9,16 @@ import Secondaries from "../components/Secondaries/Secondaries";
 import RoundPlate from "../components/RoundPlate/RoundPlate";
 import OverlayImageBottom from "../components/OverlayImageBottom/OverlayImageBottom";
 
+const gameRef = ref(database, "/games/4b305bd0-2eb8-11ed-a261-0242ac120002");
+
 const Overlay = () => {
-  const playerNameRef = ref(database, "/users");
-  const [playerData, setPlayerData] = useState({ 1: {}, 2: {} });
-  // const [playerTwo, setPlayerTwo] = useState(null);
+  const [gameData, setGameData] = useState({});
 
   useEffect(() => {
-    onValue(playerNameRef, (snapshot) => {
-      setPlayerData(snapshot.val());
+    onValue(gameRef, (snapshot) => {
+      setGameData(snapshot.val());
     });
-  }, [playerNameRef]);
+  }, []);
 
   return (
     <Box
@@ -27,17 +27,36 @@ const Overlay = () => {
         width: "25%",
         height: "100vh",
         display: "flex",
-        "justify-content": "space-between",
-        "align-items": "flex-start",
+        justifyContent: "space-between",
+        alignItems: "flex-start",
       }}
     >
       <Container>
-        <NamePlate name={playerData["1"]?.name} army={playerData["1"]?.army} />
-        <ScorePlate commandPoints={3} />
-        <Secondaries />
-        <NamePlate name={playerData["2"]?.name} army={playerData["2"]?.army} />
-        <ScorePlate commandPoints={5} />
-        <RoundPlate />
+        <NamePlate
+          name={gameData?.playerOneName}
+          army={gameData?.playerOneFaction}
+        />
+        <ScorePlate
+          score={gameData?.playerOneScore}
+          commandPoints={gameData?.playerOneCP}
+        />
+        <Secondaries
+          p1Sec1={gameData?.p1Sec1}
+          p1Sec2={gameData?.p1Sec2}
+          p1Sec3={gameData?.p1Sec3}
+        />
+        <NamePlate
+          name={gameData?.playerTwoName}
+          army={gameData?.playerTwoFaction}
+        />
+        <ScorePlate
+          score={gameData?.playerTwoScore}
+          commandPoints={gameData?.playerTwoCP}
+        />
+        <RoundPlate
+          currentRound={gameData?.currentRound}
+          missionName={gameData?.missionName}
+        />
         <OverlayImageBottom />
       </Container>
     </Box>

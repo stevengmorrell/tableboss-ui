@@ -3,17 +3,30 @@ import { Box } from "@mui/system";
 import placeholderImage from "./placeholder-human.jpg";
 import { Typography } from "@mui/material";
 
-const ScorePlate = ({ commandPoints }) => {
-  const Dot = (colour) => (
+const ScorePlate = ({ score, commandPoints }) => {
+  const Dot = () => (
     <Box
       component='span'
       sx={{
         height: "15px",
         width: "15px",
-        "border-radius": "50%",
-        "background-color": "#39AAC4",
+        borderRadius: "50%",
+        backgroundColor: "#39AAC4",
         display: "inline-block",
-        "margin-right": "3px",
+        marginRight: "3px",
+      }}
+    ></Box>
+  );
+  const EmptyDot = () => (
+    <Box
+      component='span'
+      sx={{
+        height: "15px",
+        width: "15px",
+        borderRadius: "50%",
+        backgroundColor: "#B2B2B2",
+        display: "inline-block",
+        marginRight: "3px",
       }}
     ></Box>
   );
@@ -21,10 +34,10 @@ const ScorePlate = ({ commandPoints }) => {
 
   const CommandPoints = () => {
     for (let i = 0; i < commandPoints; i++) {
-      cps.push(<Dot />);
+      cps.push(<Dot key={i} />);
     }
     for (let i = 0; i < 15 - commandPoints; i++) {
-      cps.push(<Dot />);
+      cps.push(<EmptyDot key={i + 100} />);
     }
     return (
       <Box sx={{ display: "flex" }}>
@@ -39,15 +52,15 @@ const ScorePlate = ({ commandPoints }) => {
       <Box
         sx={{
           display: "flex",
-          "justify-content": "space-between",
+          justifyContent: "space-between",
         }}
       >
         <img src={placeholderImage} alt='' width='105px' />
         <Box
           component='span'
           sx={{
-            "font-size": "14px",
-            "line-height": "17px",
+            fontSize: "14px",
+            lineHeight: "17px",
           }}
         >
           Score
@@ -55,11 +68,11 @@ const ScorePlate = ({ commandPoints }) => {
         <Box
           component='span'
           sx={{
-            "font-size": "80px",
-            "line-height": "97px",
+            fontSize: "80px",
+            lineHeight: "97px",
           }}
         >
-          100
+          {score}
         </Box>
       </Box>
       <CommandPoints />
