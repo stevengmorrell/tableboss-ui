@@ -2,6 +2,7 @@
   "factions": [
     {
       "name": "Generic",
+      "key": 0,
       "secondaries": [
         "BRING IT DOWN",
         "GRIND THEM DOWN",
@@ -17,6 +18,7 @@
     },
     {
       "name": "Adepta Sororitas",
+      "key": 1,
       "secondaries": [
         "SLAY THE HERETIC",
         "A LEAP OF FAITH",
@@ -26,10 +28,12 @@
     },
     {
       "name": "Adeptus Custodes",
+      "key": 2,
       "secondaries": ["AURIC MORTALIS", "MIGHT OF TERRA", "STAND VIGIL"]
     },
     {
       "name": "Adeptus Mechanicus",
+      "key": 3,
       "secondaries": [
         "ACCRETION OF KNOWLEDGE",
         "ERADICATION OF FLESH",
@@ -39,6 +43,7 @@
     },
     {
       "name": "Astra Militarum",
+      "key": 4,
       "secondaries": [
         "BY LASGUN AND BAYONET",
         "INFLEXIBLE COMMAND",
@@ -48,6 +53,7 @@
     },
     {
       "name": "Imperial Knights",
+      "key": 5,
       "secondaries": [
         "DUEL OF HONOUR",
         "HONOUR OF THE HOUSE",
@@ -57,6 +63,7 @@
     },
     {
       "name": "Grey Knights",
+      "key": 6,
       "secondaries": [
         "DESTROY THE DAEMON",
         "TELEPORT ASSAULT",
@@ -65,10 +72,12 @@
     },
     {
       "name": "Space Marines",
+      "key": 7,
       "secondaries": ["CODEX WARFARE", "OATHS OF MOMENT", "SHOCK TACTICS"]
     },
     {
       "name": "Deathwatch",
+      "key": 8,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -81,6 +90,7 @@
     },
     {
       "name": "Dark Angels",
+      "key": 9,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -92,6 +102,7 @@
     },
     {
       "name": "Blood Angels",
+      "key": 10,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -104,6 +115,7 @@
     },
     {
       "name": "Black Templars",
+      "key": 11,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -115,6 +127,7 @@
     },
     {
       "name": "Imperial Fists",
+      "key": 12,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -124,6 +137,7 @@
     },
     {
       "name": "Iron Hands",
+      "key": 13,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -133,6 +147,7 @@
     },
     {
       "name": "Raven Guard",
+      "key": 14,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -142,6 +157,7 @@
     },
     {
       "name": "Salamanders",
+      "key": 15,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -151,6 +167,7 @@
     },
     {
       "name": "Space Wolves",
+      "key": 16,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -163,6 +180,7 @@
     },
     {
       "name": "Ultramarines",
+      "key": 17,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -172,6 +190,7 @@
     },
     {
       "name": "White Scars",
+      "key": 18,
       "secondaries": [
         "CODEX WARFARE",
         "OATHS OF MOMENT",
@@ -181,10 +200,12 @@
     },
     {
       "name": "Chaos Space Marines",
+      "key": 19,
       "secondaries": ["RISE TO GLORY", "THE LONG WAR", "FOR THE DARK GODS"]
     },
     {
       "name": "Alpha Legion",
+      "key": 20,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -194,6 +215,7 @@
     },
     {
       "name": "Black Legion",
+      "key": 21,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -203,6 +225,7 @@
     },
     {
       "name": "Creations of Bile",
+      "key": 22,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -212,6 +235,7 @@
     },
     {
       "name": "Emperor's Children",
+      "key": 23,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -221,6 +245,7 @@
     },
     {
       "name": "Iron Warriors",
+      "key": 24,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -230,6 +255,7 @@
     },
     {
       "name": "Night Lords",
+      "key": 25,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -239,6 +265,7 @@
     },
     {
       "name": "Red Corsairs",
+      "key": 26,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -248,6 +275,7 @@
     },
     {
       "name": "Word Bearers",
+      "key": 27,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -257,6 +285,7 @@
     },
     {
       "name": "World Eaters",
+      "key": 28,
       "secondaries": [
         "RISE TO GLORY",
         "THE LONG WAR",
@@ -266,6 +295,7 @@
     },
     {
       "name": "Chaos Daemons",
+      "key": 29,
       "secondaries": [
         "NOURISHED BY TERROR",
         "REALITY REBELS",
@@ -274,6 +304,7 @@
     },
     {
       "name": "Chaos Knights",
+      "key": 30,
       "secondaries": [
         "A FITTING CHALLENGE",
         "PATH OF DESTRUCTION",
@@ -283,6 +314,7 @@
     },
     {
       "name": "Thousand Sons",
+      "key": 31,
       "secondaries": [
         "SORCEROUS POWER",
         "WRATH OF MAGNUS",
@@ -292,6 +324,7 @@
     },
     {
       "name": "Death Guard",
+      "key": 32,
       "secondaries": [
         "FLEEING VECTORS",
         "DESPOILED GROUND",
@@ -300,6 +333,7 @@
     },
     {
       "name": "Asuryani",
+      "key": 33,
       "secondaries": [
         "WRATH OF KHAINE",
         "SCRY FUTURES",
@@ -309,6 +343,7 @@
     },
     {
       "name": "Drukhari",
+      "key": 34,
       "secondaries": [
         "TAKE THEM ALIVE",
         "BEASTS FOR THE ARENAS",
@@ -318,14 +353,17 @@
     },
     {
       "name": "Genestealer Cults",
+      "key": 35,
       "secondaries": ["AMBUSH", "BROODSWARM", "SABOTAGE CRITICAL LOCATION"]
     },
     {
       "name": "Harlequins",
+      "key": 36,
       "secondaries": ["A DEADLY PERFORMANCE", "WEAVE VEIL", "TAKE YOUR PLACES"]
     },
     {
       "name": "Necrons",
+      "key": 37,
       "secondaries": [
         "CODE OF COMBAT",
         "THE TREASURES OF AEONS",
@@ -335,6 +373,7 @@
     },
     {
       "name": "Orks",
+      "key": 38,
       "secondaries": [
         "DA BIGGEST AND DA BEST",
         "STOMP’EM GOOD",
@@ -344,6 +383,7 @@
     },
     {
       "name": "T'au Empire",
+      "key": 39,
       "secondaries": [
         "A CLEAN VICTORY",
         "DECISIVE ACTION",
@@ -352,12 +392,17 @@
     },
     {
       "name": "Tyranids",
+      "key": 40,
       "secondaries": ["CRANIAL FEASTING", "SYNAPTIC INSIGHT", "SPORE NODES"]
     }
   ],
   "missionPacks": [
     {
       "name": "Warhammer 40,000 9th Edition Warzone Nephillim - Strike Force",
+      "key": 1,
+      "maxPrimary": 45,
+      "maxSecondary": 45,
+      "battleReady": 10,
       "missions": [1, 2, 3, 4, 5, 6, 7, 8, 9]
     }
   ],
@@ -540,38 +585,38 @@
     }
   ],
   "games": {
-    "2ac27332-2eb9-11ed-a261-0242ac120002": "",
     "4b305bd0-2eb8-11ed-a261-0242ac120002": {
-      "currentRound": 1,
-      "missionName": "Recover the Relics",
-      "p1Sec1": {
-        "name": "xxx",
-        "value": 4
-      },
-      "p1Sec3": {
-        "name": "zzz",
-        "value": 5
-      },
-      "p1sec2": {
-        "name": "yyy",
-        "value": 3
-      },
-      "playerOneCP": 3,
-      "playerOneFaction": "Adeptus Mechanicus",
-      "playerOneName": "Steve",
-      "playerOneScore": 15,
-      "playerTwoCP": 4,
-      "playerTwoFaction": "Salamanders",
-      "playerTwoName": "Tom",
-      "playerTwoScore": 10
+      "activePlayer": 1,
+      "missionPack": 1,
+      "mission": 3,
+      "currentTournamentRound": 3,
+      "maxTournamentRounds": 5,
+      "currentTurn": 2,
+      "p1Name": "Steven Morrell",
+      "p1Image": "someURL.com",
+      "p1BattleReady": true,
+      "p1Faction": 31,
+      "p1Cp": 2,
+      "p2Name": "Tom Wallis",
+      "p2Image": "someURL2.com",
+      "p2BattleReady": false,
+      "p2Faction": 15,
+      "p2Cp": 3,
+      "p1Sec1": "SORCEROUS POWER",
+      "p1Sec2": "WRATH OF MAGNUS",
+      "p1Sec3": "MUTATE LANDSCAPE",
+      "p2Sec1": "SORCEROUS POWER",
+      "p2Sec2": "WRATH OF MAGNUS",
+      "p2Sec3": "MUTATE LANDSCAPE",
+      "p1Turn1": {
+        "pri1Value": 6,
+        "pri2Value": 1,
+        "pri3Value": 0,
+        "pri4Value": 1,
+        "sec1Value": 0,
+        "sec2Value": 2,
+        "sec3Value": 4
+      }
     }
-  },
-  "users": [
-    {
-      "name": "Paul"
-    },
-    {
-      "name": "Steve"
-    }
-  ]
+  }
 }

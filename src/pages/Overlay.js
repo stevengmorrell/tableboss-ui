@@ -10,16 +10,20 @@ import RoundPlate from "../components/RoundPlate/RoundPlate";
 import OverlayImageBottom from "../components/OverlayImageBottom/OverlayImageBottom";
 
 const gameRef = ref(database, "/games/4b305bd0-2eb8-11ed-a261-0242ac120002");
+const factionsRef = ref(database, "/factions");
 
 const Overlay = () => {
   const [gameData, setGameData] = useState({});
+  const [factions, setFactions] = useState({});
 
   useEffect(() => {
     onValue(gameRef, (snapshot) => {
       setGameData(snapshot.val());
     });
+    onValue(factionsRef, (snapshot) => {
+      setFactions(snapshot.val());
+    });
   }, []);
-
   return (
     <Box
       sx={{
@@ -33,26 +37,25 @@ const Overlay = () => {
     >
       <Container>
         <NamePlate
-          name={gameData?.playerOneName}
-          army={gameData?.playerOneFaction}
+          name={gameData?.p1Name}
+          army={factions[gameData.p1Faction]?.name}
         />
-        <ScorePlate
-          score={gameData?.playerOneScore}
-          commandPoints={gameData?.playerOneCP}
+        <ScorePlate score={gameData?.p1Score} commandPoints={gameData?.p1Cp} />
+        <Secondaries
+          sec1={gameData?.p1Sec1}
+          sec2={gameData?.p1Sec2}
+          sec3={gameData?.p1Sec3}
         />
         <Secondaries
-          p1Sec1={gameData?.p1Sec1}
-          p1Sec2={gameData?.p1Sec2}
-          p1Sec3={gameData?.p1Sec3}
+          sec1={gameData?.p2Sec1}
+          sec2={gameData?.p2Sec2}
+          sec3={gameData?.p2Sec3}
         />
         <NamePlate
-          name={gameData?.playerTwoName}
-          army={gameData?.playerTwoFaction}
+          name={gameData?.p2Name}
+          army={factions[gameData?.p2Faction]?.name}
         />
-        <ScorePlate
-          score={gameData?.playerTwoScore}
-          commandPoints={gameData?.playerTwoCP}
-        />
+        <ScorePlate score={gameData?.p2Score} commandPoints={gameData?.p2Cp} />
         <RoundPlate
           currentRound={gameData?.currentRound}
           missionName={gameData?.missionName}
