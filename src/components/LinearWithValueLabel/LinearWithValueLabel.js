@@ -4,15 +4,16 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-function LinearProgressWithLabel(props) {
+function LinearProgressWithLabel({ value }) {
+  const percentValue = (100 * value) / 15;
   return (
     <Box sx={{ display: "flex", alignItems: "center" }}>
       <Box sx={{ width: "100%", mr: 1 }}>
-        <LinearProgress variant='determinate' {...props} />
+        <LinearProgress variant='determinate' value={percentValue} />
       </Box>
       <Box sx={{ minWidth: 35 }}>
         <Typography variant='body2' color='text.secondary'>{`${Math.round(
-          props.value
+          value
         )}/15`}</Typography>
       </Box>
     </Box>
@@ -27,23 +28,13 @@ LinearProgressWithLabel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-export default function LinearWithValueLabel() {
-  const [progress, setProgress] = React.useState(3);
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((prevProgress) =>
-        prevProgress >= 100 ? 10 : prevProgress + 10
-      );
-    }, 800);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-
+export default function LinearWithValueLabel({ secondary, value }) {
   return (
-    <Box sx={{ width: "100%" }}>
-      <LinearProgressWithLabel value={progress} />
+    <Box>
+      <Typography>{secondary}</Typography>
+      <Box sx={{ width: "100%" }}>
+        <LinearProgressWithLabel value={value} />
+      </Box>
     </Box>
   );
 }
