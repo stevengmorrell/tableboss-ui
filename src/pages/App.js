@@ -18,6 +18,9 @@ function App() {
         <Button component={RouterLink} to='/managegames'>
           Manage Games
         </Button>
+        <Button component={RouterLink} to='/login'>
+          Login
+        </Button>
       </ButtonGroup>
     </Container>
   );
