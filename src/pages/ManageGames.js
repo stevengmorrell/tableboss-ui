@@ -1,6 +1,6 @@
 import { ref, set } from "firebase/database";
 import React from "react";
-import { database } from "../base";
+import { database } from "../firebase";
 import { useForm, Controller } from "react-hook-form";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
