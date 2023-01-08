@@ -1,5 +1,5 @@
-import { ref, set } from "firebase/database";
-import React from "react";
+import { onValue, ref, set } from "firebase/database";
+import React, { useEffect, useState } from "react";
 import { database } from "../firebase";
 import { useForm, Controller } from "react-hook-form";
 import TextField from "@mui/material/TextField";
@@ -7,8 +7,30 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import { Container, Stack } from "@mui/material";
+import { UserAuth } from "../context/AuthContext";
+
+// What does this component actually do?
+
+// 1. Select one of your Active Games
+// 2. UI populates details of your active games and options for all dropdowns etc
+// 3. URL with copy button is generated for the overlay
+// 3. User can update all details of game
+// 4. User can submit change to game
 
 const ManageGames = () => {
+  const { user } = UserAuth();
+
+  const [gameData, setGameData] = useState({});
+
+  const userRef = ref(database, `/games/${user.uid}`);
+
+  useEffect(() => {
+    onValue(userRef, (snapshot) => {
+      setGameData(snapshot.val());
+    });
+    console.log("Got game data");
+  }, []);
+
   const {
     handleSubmit,
     control,
@@ -33,6 +55,9 @@ const ManageGames = () => {
         mt: "20px",
       }}
     >
+      <p>
+        http://localhost:3000/overlay?u=ju7dwAH2ZXbaWSoXYPJBcEHPUz82&g=6fe5d29a-0a2f-46c7-9b6c-04ca831ad36b
+      </p>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Stack>
           <Controller
