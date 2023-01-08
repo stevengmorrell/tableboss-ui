@@ -23,8 +23,11 @@ export const AuthContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser, uid) => {
       setUser(currentUser);
+      // if new user, create an entry in the database
+
+      //if existing user, do nothing
     });
     return () => {
       unsubscribe();
