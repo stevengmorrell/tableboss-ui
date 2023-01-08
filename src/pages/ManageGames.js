@@ -22,14 +22,11 @@ const ManageGames = () => {
 
   const [gameData, setGameData] = useState({});
 
-  const userRef = ref(database, `/games/${user.uid}`);
-
   useEffect(() => {
-    onValue(userRef, (snapshot) => {
+    onValue(ref(database, `/games/${user.uid}/`), (snapshot) => {
       setGameData(snapshot.val());
     });
-    console.log("Got game data");
-  }, []);
+  }, [user]);
 
   const {
     handleSubmit,
@@ -49,15 +46,34 @@ const ManageGames = () => {
     });
   };
 
+  const GameNames = () =>
+    gameData ? (
+      Object.keys(gameData).map((game) => <p>{gameData[game].gameName}</p>)
+    ) : (
+      <p>Loading...</p>
+    );
+
+  const GameLinks = () =>
+    gameData ? (
+      Object.keys(gameData).map((game) => {
+        return (
+          <p>
+            http://localhost:3000/overlay?u={user.uid}&g={game}
+          </p>
+        );
+      })
+    ) : (
+      <p>Loading...</p>
+    );
+
   return (
     <Container
       sx={{
         mt: "20px",
       }}
     >
-      <p>
-        http://localhost:3000/overlay?u=ju7dwAH2ZXbaWSoXYPJBcEHPUz82&g=6fe5d29a-0a2f-46c7-9b6c-04ca831ad36b
-      </p>
+      <GameNames />
+      <GameLinks />
       <form onSubmit={handleSubmit(onSubmit)}>
         <Stack>
           <Controller
