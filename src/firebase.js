@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
+import { getAuth } from "firebase/auth";
 // import { getAnalytics } from "firebase/analytics";
 
 // // TODO: Add SDKs for Firebase products that you want to use
@@ -19,13 +20,15 @@ const firebaseConfig = {
     "https://tableboss-ui-default-rtdb.europe-west1.firebasedatabase.app",
 };
 
-// // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-//   const analytics = getAnalytics(app);
 
 const database = getDatabase(app);
 
-export { database };
+const auth = getAuth();
+
+export { database, auth };
+
+//   const analytics = getAnalytics(app);
 
 //   // named export
 // export { firebaseConfig };

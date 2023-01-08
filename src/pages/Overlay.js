@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ref, onValue } from "firebase/database";
-import { database } from "../base";
+import { database } from "../firebase";
 import { Box } from "@mui/system";
 import NamePlate from "../components/NamePlate/NamePlate";
 import { Container } from "@mui/material";
