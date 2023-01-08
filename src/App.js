@@ -6,7 +6,6 @@ import ManageGames from "./pages/ManageGames";
 import Overlay from "./pages/Overlay";
 import Protected from "./components/Protected/Protected";
 import Home from "./pages/Home";
-import { Container } from "@mui/material";
 import { AuthContextProvider } from "./context/AuthContext";
 import Layout from "./components/Layout/Layout";
 
